@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support &mdash; Code Blocks for Confluence</title>
+<style>
+  :root { --ink:#172B4D; --muted:#626F86; --line:#DFE1E6; --blue:#0052CC; --bg:#FFFFFF; --panel:#F4F5F7; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+         color:var(--ink); background:var(--bg); }
+  .wrap { max-width:780px; margin:0 auto; padding:0 24px; }
+  h1 { font-size:2.2rem; margin:64px 0 8px; }
+  h2 { font-size:1.25rem; margin:40px 0 10px; }
+  h3 { font-size:1.05rem; margin:28px 0 6px; }
+  .lede { color:var(--muted); margin:0 0 32px; }
+  .panel { background:var(--panel); border-radius:8px; padding:20px 24px; margin:24px 0; }
+  table { border-collapse:collapse; width:100%; margin:16px 0; }
+  th, td { text-align:left; padding:10px 8px; border-bottom:1px solid var(--line); font-size:15px; }
+  th { color:var(--muted); font-weight:600; }
+  footer { margin:72px 0 48px; padding-top:24px; border-top:1px solid var(--line);
+           color:var(--muted); font-size:14px; }
+  a { color:var(--blue); } footer a { color:var(--muted); }
+  code { background:var(--panel); padding:2px 6px; border-radius:4px; font-size:14px; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#E6EDF3; --muted:#9BA6B4; --line:#2D333B; --bg:#0D1117; --panel:#161B22; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Support</h1>
+  <p class="lede">Code Blocks for Confluence</p>
+
+  <div class="panel">
+    <p style="margin:0 0 8px"><strong>Email:</strong>
+       <a href="mailto:rvenning.apps@gmail.com">rvenning.apps@gmail.com</a></p>
+    <p style="margin:0; color:var(--muted)">Please include your Confluence site URL and, if the
+       problem involves a specific block, the language you selected. That is usually enough to
+       reproduce it.</p>
+  </div>
+
+  <h2>Response targets</h2>
+  <table>
+    <tr><th>Type</th><th>First response</th></tr>
+    <tr><td>The app is broken or content is missing</td><td>1 business day</td></tr>
+    <tr><td>Something is not working as documented</td><td>2 business days</td></tr>
+    <tr><td>Questions and feature requests</td><td>3 business days</td></tr>
+  </table>
+  <p style="color:var(--muted); font-size:15px">Business days are Monday to Friday,
+     Australian Eastern time.</p>
+
+  <h2>Common questions</h2>
+
+  <h3>My code did not appear in the exported PDF or Word document</h3>
+  <p>It should. This is the specific problem the app was built to solve, so please report it &mdash;
+     include the page and the export format you used. As a check, confirm the macro shows your
+     code on the page itself first; an empty macro exports as an empty block.</p>
+
+  <h3>My language is not in the list</h3>
+  <p>The dropdown offers a curated set of the most commonly used languages rather than all 200+
+     that the underlying highlighter supports. If yours is missing, email the name and it will be
+     added. Meanwhile, choose <code>Plain text</code> &mdash; the code will render correctly, just
+     without colouring.</p>
+
+  <h3>Highlighting the wrong lines, or nothing highlighted</h3>
+  <p>The highlight field takes line numbers and ranges only, for example <code>3</code>,
+     <code>1-5</code>, or <code>1-5,9,12-14</code>. Anything else is rejected when you save.
+     Line numbers count blank lines.</p>
+
+  <h3>Can I get my code back if I uninstall the app?</h3>
+  <p>Yes. Your code is stored in the Confluence page itself, not in the app. Uninstalling does not
+     remove it, and it remains in the page&rsquo;s content and version history.</p>
+
+  <h3>What data does the app collect?</h3>
+  <p>None. The app requests no Confluence permissions and makes no external network calls. See the
+     <a href="privacy.html">privacy policy</a>.</p>
+
+  <h3>Billing, invoices and refunds</h3>
+  <p>All purchasing is handled by Atlassian through Marketplace billing, not by us. For invoices,
+     payment methods, licence changes or refunds, contact
+     <a href="https://support.atlassian.com/">Atlassian Support</a>, which is the only party with
+     access to those records.</p>
+
+  <h2>Reporting a security issue</h2>
+  <p>Email the address above with &ldquo;security&rdquo; in the subject line. Please do not open a
+     public report before it has been addressed.</p>
+
+  <footer>
+    <p><a href="index.html">Home</a> &middot; <a href="privacy.html">Privacy policy</a></p>
+    <p>Code Blocks is an independent app, not affiliated with or endorsed by Atlassian.</p>
+  </footer>
+</div>
+</body>
+</html>
