@@ -66,7 +66,14 @@
   <h3>Highlighting the wrong lines, or nothing highlighted</h3>
   <p>The highlight field takes line numbers and ranges only, for example <code>3</code>,
      <code>1-5</code>, or <code>1-5,9,12-14</code>. Anything else is rejected when you save.
-     Line numbers count blank lines.</p>
+     Line numbers count blank lines. Highlighted lines are shaded and marked in the line-number
+     column, so line numbers are always shown when a block has highlighted lines. Line
+     highlighting is shown on the page; exports contain the code without the highlight bands.</p>
+
+  <h3>Word export has no syntax colours</h3>
+  <p>That is expected. Confluence&rsquo;s Word export renders every code block, including its own
+     built-in one, as plain fixed-width text. Your code, line breaks and indentation are preserved.
+     For coloured code in a document, export to PDF.</p>
 
   <h3>Can I get my code back if I uninstall the app?</h3>
   <p>Yes. Your code is stored in the Confluence page itself, not in the app. Uninstalling does not
